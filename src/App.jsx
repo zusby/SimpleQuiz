@@ -20,27 +20,29 @@ function App() {
       complete: (result) => {
         setData(result.data);
       },
-      header: false, 
+      header: true, 
     });
   };
 
-function getRandomInt(min, max) {
-    min = Math.ceil(0);
-  max = Math.floor(data.length);
-  console.log(random);
+function getRandomInt() {
+  let min = Math.ceil(0);
+  let max = Math.floor(data.length);
   setRandom(Math.floor(Math.random() * (max - min + 1) + min));
 }
-  if(data)
-  if (data[random][0] === undefined || data[random][0] === "" ||  data[random][0] === null) {
-    getRandomInt();
+
+  if (data) {
+    if (data[random].Column1 === "Domanda") {
+      getRandomInt();
   }
+}
+  
 
   return (
     <>
       <div>
         <Toaster/>
         <div className="read-the-docs">
-          {data && <h1>{data[random][0]}</h1>}
+          {data && <h1>{data[random].Column1}</h1>}
          {data && <Questions questions={data[random]}/>}
   
              <input type="file" accept=".csv" onChange={handleFileUpload} />

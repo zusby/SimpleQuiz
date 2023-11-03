@@ -1,13 +1,19 @@
-<<<<<<< HEAD
 # SimpleQuiz
-A SPA that given a csv will randomly propose multiple choice questions
-=======
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple SPA used to get random multiple choice questions
 
-Currently, two official plugins are available:
+# Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> master
+```bash
+npm install
+```
+
+then
+
+```bash
+npm run dev
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
